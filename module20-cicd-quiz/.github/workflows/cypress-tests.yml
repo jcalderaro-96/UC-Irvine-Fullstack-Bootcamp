@@ -1,0 +1,25 @@
+name: Run Cypress Tests  # Workflow name
+
+on:
+  pull_request:
+    branches:
+      - develop  # Trigger only on PRs to develop branch
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest  # Use Ubuntu runner
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3  # Get the repo code
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3  # Set Node.js version
+        with:
+          node-version: 16  # Use Node.js 16
+
+      - name: Install dependencies
+        run: npm install  # Install project packages
+
+      - name: Run Cypress tests
+        run: npm run test-component  # Run Cypress component tests only
