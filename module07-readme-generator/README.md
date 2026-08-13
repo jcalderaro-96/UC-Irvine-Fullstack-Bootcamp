@@ -7,6 +7,18 @@
 
 ---
 
+## Table of Contents
+
+- [Objective](#objective)
+- [What It Does](#what-it-does)
+- [How To Run](#how-to-run)
+- [Example Prompt Flow](#example-prompt-flow)
+- [Project Structure](#project-structure)
+- [What It Demonstrates](#what-it-demonstrates)
+- [License](#license)
+
+---
+
 ## Objective
 
 Build a command-line tool that prompts a developer through a structured set of questions and automatically generates a complete, professionally formatted `README.md` file — no manual markdown writing required.
@@ -32,6 +44,24 @@ Follow the prompts in the terminal. The generated file will appear in `Output/RE
 
 ---
 
+## Example Prompt Flow
+
+```
+? What is your project title? My Awesome App
+? Write a description of your project: A web app that does X.
+? What are the installation instructions? npm install
+? How is the app used? Run npm start and open localhost:3000
+? What are the contribution guidelines? Fork the repo and submit a PR.
+? What are the test instructions? npm test
+? Choose a license for your project: MIT
+? What is your GitHub username? jcalderaro-96
+? What is your email address? dev@example.com
+
+README.md generated successfully in Output folder!
+```
+
+---
+
 ## Project Structure
 
 ```
@@ -52,3 +82,9 @@ module07-readme-generator/
 - Dynamic markdown generation using template literals with conditional license badge logic
 - File system writes and directory creation with Node's built-in `fs` and `path` modules
 - ES module syntax (`import`/`export`) in a Node.js environment
+
+---
+
+## License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
