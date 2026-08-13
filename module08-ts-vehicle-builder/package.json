@@ -1,0 +1,29 @@
+{
+  "name": "develop",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "npm run build && node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/inquirer": "^9.0.8",
+    "@types/node": "^20.17.57",
+    "inquirer": "^12.6.3",
+    "typescript": "^5.8.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcalderaro-96/UCI-Module-8-TSVehicleBuilder.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/jcalderaro-96/UCI-Module-8-TSVehicleBuilder/issues"
+  },
+  "homepage": "https://github.com/jcalderaro-96/UCI-Module-8-TSVehicleBuilder#readme",
+  "description": ""
+}
