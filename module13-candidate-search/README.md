@@ -9,6 +9,7 @@
 
 ## Table of Contents
 
+- [Live Demo](#live-demo)
 - [Objective](#objective)
 - [What It Does](#what-it-does)
 - [Screenshot](#screenshot)
@@ -17,6 +18,12 @@
 - [What It Demonstrates](#what-it-demonstrates)
 - [Notes](#notes)
 - [License](#license)
+
+---
+
+## Live Demo
+
+Deployed on Render: [https://uci-module-13-candidatesearch.onrender.com](https://uci-module-13-candidatesearch.onrender.com)
 
 ---
 
@@ -30,7 +37,7 @@ Build a React + TypeScript app that pulls real GitHub users via the GitHub API a
 
 On load, the app fetches a batch of GitHub users and then enriches each with a second API call to get full profile details (name, location, company, email, bio). Users are shown one at a time with their avatar and details. Clicking `+` saves them to localStorage and advances to the next; clicking `-` skips. When the batch runs out, the page reports no more candidates.
 
-The Saved Candidates page reads from localStorage and renders the saved list with full profile info and a per-entry Remove button that updates both state and storage. The app was deployed to Render during the course.
+The Saved Candidates page reads from localStorage and renders the saved list with full profile info and a per-entry Remove button that updates both state and storage.
 
 If the GitHub API is unavailable or the token is missing, the API layer falls back to hardcoded fake candidates so the UI stays functional.
 
